@@ -1,6 +1,10 @@
 # The Avenue Concept Image Resizer
 
-This is a lightweight Google App Engine service developed for the avenue concept to deal with image resizing. It's designed to respond to POST requests containing the url of an image to download. The service downloads the passed image, stores the image in Google Cloud Store, and then generates a `serving_url` from the Google Cloud Store object. This serving url is a persistent url that can be called with parameters specifying the desired width, height, and crop of the given image. See the Google App Engine Images api page for `get_serving_url` [here](https://cloud.google.com/appengine/docs/standard/python/refdocs/google.appengine.api.images#google.appengine.api.images.get_serving_url) for details on the available parameters.
+This is a lightweight Google App Engine service developed for the avenue concept to deal with image resizing. It's designed to respond to POST requests containing the url of an image to download. The service downloads the passed image, stores the image in Google Cloud Store, and then generates a `serving_url` from the Google Cloud Store object. This serving url is a persistent url that can be called with parameters specifying the desired width, height, and crop of the given image. See the Google App Engine Images api page for `get_serving_url` [here](https://cloud.google.com/appengine/docs/standard/python/refdocs/google.appengine.api.images#google.appengine.api.images.get_serving_url) for details on the available parameters. Even more undocumented parameters are available in this [SO post](https://stackoverflow.com/questions/25148567/list-of-all-the-app-engine-images-service-get-serving-url-uri-options).
+
+## Image Manipulation Parameters
+
+
 
 ## Successful Requests
 
